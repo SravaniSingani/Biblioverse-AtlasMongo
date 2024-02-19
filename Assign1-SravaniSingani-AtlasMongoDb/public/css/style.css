@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#CCC7C3, #FFF);
+    margin: 0;
+    padding: 0;
+}
+
+header .header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+header .header-content a{
+ text-decoration: none;
+ color: #000;
+}
+
+header .header-content a:hover{
+    text-decoration: none;
+    text-shadow: #2E3B32 1px 0 5px;
+    color: #000;
+}
+
+header .header-content a:active{
+    text-decoration: none;
+    text-shadow: rgb(57, 50, 45) 1px 0 10px;
+    color: #000;
+}
+
+#main-navigation li{
+    display: inline;
+   padding: 20px;
+}
+
+#main-navigation li{
+    list-style-type: none;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+/* index.pug style */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    height: 400px;
+}
+
+.hero-img{
+    background-image: url(img/heroimg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    width: 600px;
+    padding: 20px;
+}
+
+.explore{
+    height: 70px;
+    width: 200px;
+    color: #E5E3E0;
+    background-color: #2E3B32;
+    border: none;
+    border-radius: 50px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.home-content{
+    background-image: url(img/home2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+}
+
+.home-contenttext {
+   padding: 50px;
+   position: relative;
+   top: 70px;
+}
+.home-contextbg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.5); 
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    border: none;
+}
+
+.content-text{
+    margin-top: 0;
+}
+
+.about-bestsellers {
+    background-color: #E5E3E0;
+}
+
+.bestseller-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.bestseller-main{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+.bestseller-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #2E3B32;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.bestseller-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 260px;
+    max-width: 260px;
+    padding: 10px;
+}
+
+.product1-img{
+    background-image: url(img/product1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+
+}
+
+.product2-img{
+    background-image: url(img/product2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+
+}
+
+.product3-img{
+    background-image: url(img/product3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 260px;
+    height: 400px;
+}
+
+.producttext{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-bottom:0;
+    color: #E5E3E0;
+}
+
+#productrank{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #CCC7C3;
+    margin-top: 0;
+}
+
+/* books.pug style */
+
+.product-hero {
+    background-image: url(img/productbg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+}
+
+.producthero-context {
+    padding: 50px;
+    position: relative;
+    top: 70px;
+}
+
+.producthero-contextbg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.5); 
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    border: none;
+}
+
+.producthero-maintext {
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.producthero-text{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about-genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.genre-main{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.genretext{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+    margin-top: 0;
+ 
+}
+
+.genre-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.genre-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 260px;
+    max-width: 260px;
+    padding: 10px;
+}
+
+.romance-img {
+    background-image: url(img/romance.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+}
+
+.fantasy-img {
+    background-image: url(img/fantasy.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+}
+
+.thriller-img {
+    background-image: url(img/thriller.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+}
+
+.selfhelp-img {
+    background-image: url(img/selfhelp.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 400px;
+}
+
+/* about.pug style */
+
+.about-title{
+    text-align: center;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+/* contact.pug style */
+
+.contact-main {
+    padding: 30px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    background-color: #2E3B32;
+    padding: 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 600px;
+}
+
+.contact-maintext{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #E5E3E0;
+}
+
+.contact-paratext{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #E5E3E0;
+}
+
+.contact-heroimg{
+    background-image: url(img/contacthero.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+.reviews {
+    padding: 40px;
+}
+
+.reviews-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.review-head{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+.each-review{
+   width: 100%;
+   max-width: 800px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 50px;
+   padding-right: 40px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   box-sizing: border-box;
+   background-color: #FBFBF9;
+   border: 1px #2E3B32 solid;
+   border-radius: 20px;
+}
+
+.review-name{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    margin: 0;
+    color: #2E3B32;
+}
+
+.review-email{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+    margin: 0;
+    color: #4c504d;
+}
+
+.review-feedback{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+}
+
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: #2E3B32;
+    margin-bottom: 70px;
+    padding: 20px;
+}
+
+.form-head{
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+    color: #E5E3E0;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-content label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #E5E3E0; 
+}
+
+.form-content input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 10px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+    box-sizing: border-box;
+}
+
+.form-content textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 50px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    
+}
+
+.form-content button{
+    height: 50px;
+    width: 200px;
+    margin-top: 12px;
+    color: #E5E3E0;
+    background-color: #2E3B32;
+    border: #E5E3E0 1px solid;
+    border-radius: 50px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.form-img {
+    background-image: url(img/review.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2E3B32;
+    color: #E5E3E0;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.0em;
+}
+
+/* responsive for 768px */
+@media screen and (max-width: 768px){
+
+ 
+    header .header-content{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    
+    header .header-content a{
+     text-decoration: none;
+     color: #000;
+    }
+    
+    header .header-content a:hover{
+        text-decoration: none;
+        text-shadow: #2E3B32 1px 0 5px;
+        color: #000;
+    }
+    
+    header .header-content a:active{
+        text-decoration: none;
+        text-shadow: rgb(57, 50, 45) 1px 0 10px;
+        color: #000;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    #main-navigation ul {
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-navigation ul.active{
+        display: flex;
+    }
+
+    #main-navigation ul li{
+        display: inline-block;
+        position: relative;
+    }
+
+    #main-navigation ul li:hover{
+        background-color: #4c504d;
+    }
+    #main-navigation ul li a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #E5E3E0;
+       
+    }
+
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #2E3B32;
+        border: 2px #4c504d solid;
+        width: 100%;
+        top: 100px;
+        z-index: 1;
+    }
+
+    .dropdown li{
+        display: block;
+       width: 100%;
+       font-size: 1.0em;
+       
+    }
+
+    #main-navigation ul li:hover .dropdown{
+        display: block;
+    }
+    
+    /* index.pug style */
+    
+    .hero{
+        align-items: center;
+        height: auto;
+    }
+    
+    .hero-img{
+        width: 100%;
+        max-width: 80%;
+        height: 300px;
+    }
+    
+    .hero-text{
+        font-size: 1.0em;
+        width: 100%;
+        max-width: 50%;
+        height: 300px;
+    }
+    
+    .explore{
+        height: 50px;
+        width: 150px;
+        font-size: 1.0em;
+    }
+    
+    .home-content{
+        height: auto;
+        padding: 30px;
+    }
+    
+    .home-contenttext {
+       padding: 20px;
+       top: 20px;
+    }
+
+    .home-contextbg{
+        font-size: 1.2em;
+ 
+    }
+    
+    .content-text{
+        margin-top: 0;
+    }
+
+    .bestseller-item{
+       flex-basis: 100%;
+       max-width: 100%;
+    }
+    
+    .product1-img{
+        background-image: url(img/product1.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    
+    }
+    
+    .product2-img{
+        background-image: url(img/product2.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    
+    }
+    
+    .product3-img{
+        background-image: url(img/product3.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 260px;
+        height: 400px;
+    }
+    
+    .producttext{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3em;
+        margin-bottom: 0;
+        color: #E5E3E0;
+    }
+    
+    #productrank{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        color: #CCC7C3;
+        margin-top: 0;
+    }
+    
+    /* books.pug style */
+    
+    .product-hero {
+        height: auto;
+    }
+    
+    .producthero-context {
+        padding: 30px;
+        top: 15px;
+    }
+    
+    
+    .producthero-maintext {
+        font-size: 1.5em;
+    }
+    
+    .producthero-text{
+        font-size: 1.2em;
+    }
+    
+    .about-genres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    .genre-main{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.7em;
+        text-align: center;
+    }
+    
+    .genretext{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+     
+    }
+    
+    .genre-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    
+    }
+    
+    .genre-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .romance-img {
+        background-image: url(img/romance.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    }
+    
+    .fantasy-img {
+        background-image: url(img/fantasy.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    }
+    
+    .thriller-img {
+        background-image: url(img/thriller.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    }
+    
+    .selfhelp-img {
+        background-image: url(img/selfhelp.png);
+        background-repeat: no-repeat;
+        background-size:contain;
+        width: 260px;
+        height: 400px;
+    }
+    
+    /* about.pug style */
+    
+    .about-title{
+        text-align: center;
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.7em;
+    }
+    
+    /* contact.pug style */
+    
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+   
+    }
+    
+    .contact-text {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+    
+    .contact-maintext{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #E5E3E0;
+    }
+    
+    .contact-paratext{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        margin-top: 0;
+        color: #E5E3E0;
+    }
+    
+    .contact-heroimg{
+        background-image: url(img/contacthero.png);
+        background-repeat: no-repeat;
+        background-size:auto;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .reviews {
+        padding: 40px;
+    }
+    
+    .reviews-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    
+    .review-head{
+        font-family: "Jomolhari", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.7em;
+    }
+    
+    .each-review{
+       max-width: 100%;
+      
+    }
+    
+    
+    
+    .form-body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .form-body label, input, textarea{
+        font-size: 1.0em;
+    }
+    
+    
+    .form-content button{
+
+        font-size: 1.2em;
+    }
+    
+    .form-img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    footer{
+        font-size: 0.8em;
+    }
+    
+
+}
+
+
+/* responsive for 480px */
+@media screen and (max-width: 480px){
+
+ 
+    
+    .hero-img{
+        width: 100%;
+        max-width: 80%;
+        height: 300px;
+    }
+    
+    .hero-text{
+        font-size: 0.6em;
+    }
+    
+    .explore{
+        height: 30px;
+        width: 100px;
+        font-size: 0.6em;
+    }
+    
+    .hero-img{
+        max-width: 100%;
+        max-width: 80%;
+    }
+    
+    .hero-text{
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .home-contextbg{
+        font-size: 0.8em;
+    }
+
+    .bestseller-items{
+        padding: 10px;
+     }
+
+     .product1-img{
+        height: 400px;
+    
+    }
+    
+    .product2-img{
+        height: 400px;
+    
+    }
+    
+    .product3-img{
+        height: 400px;
+    }
+    
+    .producttext #productrank{
+        font-size: 1em;
+    }
+
+    .contact-heroimg{
+        background-size: contain;
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+
+
+.contact-maintext{
+    font-size: 1.0em;
+
+}
+
+.contact-paratext{
+    font-size: 0.8em;
+
+}
+
+ 
+.form-body{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-body label, input, textarea{
+    font-size: 1.0em;
+}
+
+
+
+.form-content button{
+
+    font-size: 1.0em;
+    height: 45px;
+    width: 150px;
+}
+
+.form-img {
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    font-size: 0.6em;
+}
+
+
+}

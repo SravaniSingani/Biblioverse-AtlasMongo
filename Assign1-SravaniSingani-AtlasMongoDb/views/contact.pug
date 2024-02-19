@@ -1,0 +1,45 @@
+extends common/layout 
+
+block layout-content 
+  .contact-main 
+    .contact-content 
+      .contact-text 
+        h4.contact-maintext Your words shape our story: Share your experience with us! 
+        p.contact-paratext At Biblioverse, every customer review is a valuable chapter in our journey. Your feedback guides us in delivering exceptional service and curating the best selection of books. Share your thoughts with us, and together, let's create a narrative that celebrates the love for literature.
+      .contact-heroimg 
+
+  .reviews 
+    .reviews-content 
+      h4.review-head REVIEWS 
+      .review-view 
+        each review in book 
+          .each-review
+            h4.review-name #{review.name} 
+            p.review-email #{review.email}
+            p.review-feedback #{review.feedback}
+
+  .review-form 
+    h4.form-head SHARE YOUR FEEDBACK
+    .form-body
+      .form-content
+        form(method="post", action="/biblio/contact/submit")
+          div
+            label(for="name") NAME: 
+            input(type="text", id="name", name="name")
+          div 
+            label(for="email") E-MAIL: 
+            input(type="email", id="email", name="email", placeholder="e.g. tom@gmail.com")
+          div 
+            label(for="rate") RATING: 
+            input(type="number", min="1",max="10" , id="rate", name="rate")
+          div 
+            label(for="feedback") FEEDBACK: 
+            textarea(name="feedback", id="feedback", cols="30", rows="10", placeholder="Type your feedback here.") 
+          button(type="submit") SUBMIT
+      .form-img 
+
+  
+
+      
+
+  

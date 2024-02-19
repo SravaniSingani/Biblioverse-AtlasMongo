@@ -1,0 +1,14 @@
+doctype html 
+html 
+  head  
+    meta(charset="utf-8")
+    title #{title} | Biblioverse Layout
+    link(rel="stylesheet", type="text/css", href="/css/style.css")
+    script(src="/css/js/common.js")
+  body  
+    include header.pug
+    main#main   
+      block layout-content 
+    footer#footer  
+      h4.logo BIBLIOVERSE
+      p &copy; Copyrights 2023, Sravani Singani
