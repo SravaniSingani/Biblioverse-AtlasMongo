@@ -21,7 +21,7 @@ The backend of the project is structured to handle user requests, interact with 
 
 Pug is utilized to create dynamic HTML templates for the frontend, enabling seamless integration with the backend and dynamic rendering of content. Key components include:
 
-## Technologies Used
+## Tech Stack Used
 
 ### Frontend
 
